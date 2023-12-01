@@ -130,7 +130,7 @@ if __name__ == '__main__':
         save_root_path = '../output/test/'
         if not os.path.isdir(save_root_path):
             os.makedirs(save_root_path)
-        model = UperNet(backbone='mae_vit_base', num_classes=1, in_channels=3, use_edge=False,
+        model = UperNet(backbone='convnext_base_22k', num_classes=1, in_channels=3, use_edge=False,
                         pretrained=True)
         model_path = None
 
